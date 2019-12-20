@@ -1,0 +1,11 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hello-world-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: hello-world-container
+          image: 0yukali0/hello-world-test
+backoffLimit: 1
